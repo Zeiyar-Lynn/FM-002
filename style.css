@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root{
+    --secondary-color: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+
+
+/* Utilities */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Fundamentals */
+#frame {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main{
+    height: 100vh;
+    font-family: 'lexend deca', sans-serif;
+    background-color: var(--secondary-color);
+}
+
+
+/* Card */
+.card-1{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+
+.card-2{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+
+.card-3{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+.card{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+
+/* Text */
+.text h1{
+    padding: 1.8rem 0;
+    font-family: 'big shoulders display';
+    font-size: 2.5rem;
+}
+
+.text p{
+    line-height: 26px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* button */
+.btn{
+    color: inherit;
+    padding: .7em 2em;
+    border-radius: 30px;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.btn a{
+    text-decoration: none;
+}
+.card a{
+    color: inherit;
+}
+
+.btn:active{
+    background-color: inherit;
+    color: var(--secondary-color);
+}
+
+
+/* Mobile */
+@media (max-width: 375px){
+    #frame {
+        grid-template-rows: repeat(3, 440px);
+        grid-template-columns: 335px;
+    }
+
+    /* Card */
+    .card{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3rem 3.3rem374;
+    }
+}
