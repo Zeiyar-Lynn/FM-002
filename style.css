@@ -31,7 +31,8 @@
 }
 
 main{
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     font-family: 'lexend deca', sans-serif;
     background-color: var(--secondary-color);
 }
